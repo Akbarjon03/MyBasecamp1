@@ -1,14 +1,30 @@
 
 <% if current_user %>   
-    <br>
-    <br>
-    <center>
-    <h3>Hello user: </h3> <h3><%= current_user.email %></h3>
-    <br> 
+    <p class="fw-bolder fs-1">Hello User: </p> <h3><%= current_user.email %></h3>
     <h2><%= link_to "New Project", projects_path %></h2>
-    <%= button_to "Log Out", destroy_user_session_path, method: :delete %>
-    </center>
-        <% else %>
+    <br>
+    <%= button_to "Log Out", destroy_user_session_path, method: :delete, class: "hp" %>
+    <style>
+    .hp {
+    background-color: red; 
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+    </style>
+    <style>
+body {
+    margin-left: 250px;
+    margin-top: 39px;
+    background-image: url("https://cdn.worldvectorlogo.com/logos/basecamp-logo-2019-1.svg")
+}
+</style>
+    <% else %>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 <%= link_to 'MyBasecamp', root_path, class:"navbar-brand" %>
