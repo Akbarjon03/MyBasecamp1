@@ -12,20 +12,22 @@
     
       <%= render project %>
       <p>
-        <%= link_to "Show this project", project %>
+        <h4><%= link_to "Show this project", project %></h4>
       </p>
     <% end %>
+    <br>
+    <br>
     <% end %>
   </div>
 
-  <%= link_to "New project", new_project_path %>
+  <h2><%= link_to "New project", new_project_path %></h2>
   <br>
   <br>
   <%= button_to "Log Out", destroy_user_session_path, method: :delete , class: "hp"%>
 
 <style>
     .hp {
-      background-color: blue; 
+      background-color: red; 
       border-radius: 12px;
       border: none;
       color: white;
