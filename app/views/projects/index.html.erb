@@ -3,7 +3,7 @@
   <p style="color: green"><%= notice %></p>
 
   <p class="fw-bolder fs-1">Projects</p>
-
+  <br>
   <div id="projects">
     <% @projects.each do |project| %>
     
@@ -14,14 +14,11 @@
       <p>
         <h4><%= link_to "Show this project", project %></h4>
       </p>
+      <br>
     <% end %>
-    <br>
-    <br>
     <% end %>
   </div>
-
   <h2><%= link_to "New project", new_project_path %></h2>
-  <br>
   <br>
   <%= button_to "Log Out", destroy_user_session_path, method: :delete , class: "hp"%>
 
@@ -35,7 +32,7 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
+      font-size: 14px;
     }
     body {
       margin-top: 35px;
