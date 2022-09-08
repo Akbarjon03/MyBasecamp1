@@ -1,6 +1,3 @@
-    <%= link_to 'MyBasecamp', root_path, class:"mybasecamp"%>
-    <%= link_to "About Us", pages_about_path, class:"aboutus"%>
-    
     <% if current_user %>   
     <p class="fw-bolder fs-1">Hello User: </p> <h3><%= current_user.email %></h3>
     <h3><%= link_to "New project", projects_path %></h3>
@@ -11,5 +8,5 @@
     
     <%= link_to "Sign up", new_user_registration_path, class:"signup" %>
     <%= link_to "Log in", new_user_session_path, class:"login" %>
-    <h1>My Basecamp 1</h1>
+    <h1>My Basecamp</h1>
     <% end %>

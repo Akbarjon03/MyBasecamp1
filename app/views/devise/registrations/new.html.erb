@@ -28,13 +28,10 @@
     </div>
     <br />
     <div class="actions">
-      <%= f.submit "Sign up", class:"btn btn-success btn-hover", data: {turbo: false}, class: "msi" %>
+      <%= f.submit "Sign up", data: {turbo: false}, class: "msi" %>
     </div>
+    <%= render "devise/shared/links" %>
   <% end %>
-
   </div>
   </div>
-
-  <br/>
-  <%= render "devise/shared/links" %>
 </div>
