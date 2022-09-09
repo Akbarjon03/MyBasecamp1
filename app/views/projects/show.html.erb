@@ -1,7 +1,8 @@
+<br/>
 <%= render @project %>
 
 <div>
-  <%= link_to "Edit this project", edit_project_path(@project), class:"edit" %>
+  <%= link_to "Edit this project", edit_project_path(@project), class:"edit1" %>
   <%= link_to "Back to projects", projects_path, class:"back" %>
 
   <%= button_to "Destroy this project", @project, method: :delete, class:"delete" %>
