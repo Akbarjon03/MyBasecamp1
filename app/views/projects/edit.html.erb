@@ -1,12 +1,9 @@
-<center>
-<p class="fw-bolder fs-1">Editing project</p>
+<p class="fw-bolder fs-1 text-center">Editing project</p>
 
 <%= render "form", project: @project %>
 
-<br>
-
 <div>
-  <h5><%= link_to "Show this project", @project %> |
-  <%= link_to "Back to projects", projects_path %> </h5>
+  <%= link_to "Show this project", @project, class:"show" %> 
+  <%= link_to "Back to projects", projects_path, class:"back" %>
 </div>
-</center>
+

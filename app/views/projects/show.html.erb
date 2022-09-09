@@ -1,28 +1,8 @@
-<center>
-<p style="color: green"><%= notice %></p>
-
 <%= render @project %>
 
 <div>
-  <h5><%= link_to "Edit this project", edit_project_path(@project) %> |
-  <%= link_to "Back to projects", projects_path %></h5>
-  <br>
-  <%= button_to "Destroy this project", @project, method: :delete, class:"hp" %>
+  <%= link_to "Edit this project", edit_project_path(@project), class:"edit" %>
+  <%= link_to "Back to projects", projects_path, class:"back" %>
+
+  <%= button_to "Destroy this project", @project, method: :delete, class:"delete" %>
 </div>
-  <style>
-  body {
-    margin-top: 100px;
-  }
-  .hp {
-    background-color: #eb1345; 
-    border-radius: 12px;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-      }
-  </style>
-</center>

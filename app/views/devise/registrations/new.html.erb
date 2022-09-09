@@ -10,12 +10,12 @@
 
 
     <div class="field form-group">
-      <%= f.label :email, class: "col-sm-2 col-form-label" %><br />
+      <%= f.label :email %><br />
       <%= f.email_field :email, class: "form-control", placeholder:"example@mail.com", autofocus: true, autocomplete: "email" %>
     </div>
     <br />
     <div class="field form-group">
-      <%= f.label :password, class: "col-sm-2 col-form-label" %>
+      <%= f.label :password %>
       <%= f.password_field :password, class: "form-control", placeholder:"Create password", autocomplete: "new-password" %>
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -23,7 +23,7 @@
     </div>
     <br/>
     <div class="field form-group">
-      <%= f.label :password_confirmation, class: "col-sm-2 col-form-label" %><br/>
+      <%= f.label :password_confirmation %><br/>
       <%= f.password_field :password_confirmation, class: "form-control", placeholder:"Confirm password", autocomplete: "new-password" %>
     </div>
     <br />

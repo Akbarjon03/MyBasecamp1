@@ -1,9 +1,7 @@
-<center>
-<h1>New project</h1>
+<p>New project</p>
 
-  <%= render "form", project: @project %>
+<%= render "form", project: @project , class:"form"%>
 
 <div>
-  <%= link_to "Back to projects", projects_path %>
+  <%= link_to "Back to projects", projects_path, class:"back" %>
 </div>
-</center>

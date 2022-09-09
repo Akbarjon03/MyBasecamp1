@@ -1,21 +1,15 @@
-  <p style="color: green"><%= notice %></p>
-
-  <p class="fw-bolder fs-1">Projects</p>
+<p class="fw-bolder fs-1 text-center">Projects</p>
   <br>
   <div id="projects">
     <% @projects.each do |project| %>
     
     <% if project.user.id == current_user.id %>
-
-    
       <%= render project %>
       <p>
-        <h4><%= link_to "Show this project", project %></h4>
+        <%= link_to "Show this project", project, class:"show"%>
       </p>
-      <br>
     <% end %>
     <% end %>
   </div>
-  <h2><%= link_to "New project", new_project_path %></h2>
-  <br>
-  <%= button_to "Log Out", destroy_user_session_path, method: :delete , class: "hp"%>
+  <%= link_to "New project", new_project_path, class:"new" %>
+  <%= button_to "Log Out", destroy_user_session_path, method: :delete , class: "logout"%>

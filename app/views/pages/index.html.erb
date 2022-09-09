@@ -1,12 +1,14 @@
-    <% if current_user %>   
-    <p class="fw-bolder fs-1">Hello User: </p> <h3><%= current_user.email %></h3>
-    <h3><%= link_to "New project", projects_path %></h3>
-    <br>
-    <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "logout" %>
+    <% if current_user %>
+    <div class="email">
+        <%= current_user.email %>
+    </div>
+
+    <%= link_to "New projects", projects_path, class:"new1" %>
+
+    <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "logout1" %>
     
     <% else %>
-    
+    <h1>My Basecamp</h1>
     <%= link_to "Sign up", new_user_registration_path, class:"signup" %>
     <%= link_to "Log in", new_user_session_path, class:"login" %>
-    <h1>My Basecamp</h1>
     <% end %>

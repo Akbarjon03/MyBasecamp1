@@ -9,19 +9,32 @@
     <%= stylesheet_link_tag "application","data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <style>
+        .container{
+          margin-top: 80px;
+          height: 200px;
+          width: 75%;
+        }
+        
+        .email {
+          font-size: 6rem;
+          text-shadow: 5px 5px 0px #1e90ff;
+          margin-left: 500px;
+          margin-top: 150px;
+        }
+
         body {
           background-image: url("https://i.pinimg.com/564x/43/45/a9/4345a99449df1fe9ea55e0085a8fd709.jpg");
-          margin: 150px;
         }
+
         h1 {
           font-size: 6rem;
           text-shadow: 5px 5px 0px #1e90ff;
-          margin-left: 350px;
-          margin-top: 250px;
+          margin-left: 500px;
+          margin-top: 200px;
         }
 
         .hp {
-          margin-left: 550px;
+          margin-left: 525px;
           background-color: #1e90ff; 
           border-radius: 12px;
           border: none;
@@ -32,8 +45,9 @@
           display: inline-block;
           font-size: 14px;
         }
+
         .msi {
-          margin-left: 550px;
+          margin-left: 500px;
           background-color: #1e90ff; 
           border-radius: 12px;
           border: none;
@@ -57,7 +71,8 @@
           display: inline-block;
           position:absolute;
           transition: .5s ease;
-          top: 25%;
+          font-size: 20px;
+          top: 50%;
           left: 8%;
         }
         .signup:hover, .signup:active {
@@ -75,16 +90,200 @@
           text-decoration: none;
           display: inline-block;
           position:absolute;
+          font-size: 20px;
           transition: .5s ease;
-          top: 25%;
-          left: 20%;
+          top: 50%;
+          left: 25%;
         }
         .login:hover, .login:active {
           background-color: #1e90ff;
         }
+
+        .new:link, .new:visited {
+          background-color: white;
+          margin-left: 480px;
+          border-radius: 10px;
+          color: black;
+          border: 2px solid #1e90ff;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          position:absolute;
+          font-size: 20px;
+          transition: .5s ease;
+          top: 35%;
+          left: 49.5%;
+        }
+        .new:hover, .new:active {
+          background-color: #1e90ff;
+        }
+
+        .new1:link, .new1:visited {
+          background-color: white;
+          margin-left: 480px;
+          border-radius: 10px;
+          color: black;
+          border: 2px solid #1e90ff;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          position:absolute;
+          font-size: 20px;
+          transition: .5s ease;
+          top: 50%;
+          left: 10%;
+        }
+        .new1:hover, .new1:active {
+          background-color: #1e90ff;
+        }
+
+        .logout {
+          background-color: white; 
+          transition-duration: 0.4s;
+          border-radius: 10px;
+          border: 2px solid #d40000;
+          color: black;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 18px;
+          position:absolute;
+          transition: .5s ease;
+          top: 10%;
+          left: 80%;
+        }
+
+        .logout:hover {
+          background-color: #d40000;
+          color: black;
+        }
+
+        .delete {
+          background-color: white; 
+          transition-duration: 0.4s;
+          border-radius: 10px;
+          border: 2px solid #d40000;
+          color: black;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 18px;
+          position:absolute;
+          transition: .5s ease;
+          top: 63%;
+          left: 44%;
+        }
+
+        .delete:hover {
+          background-color: #d40000;
+          color: black;
+        }
+
+        .logout1 {
+          background-color: white; 
+          transition-duration: 0.4s;
+          border-radius: 10px;
+          border: 2px solid #d40000;
+          color: black;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 18px;
+          position:absolute;
+          transition: .5s ease;
+          top: 50%;
+          left: 53%;
+        }
+
+        .logout1:hover {
+          background-color: #d40000;
+          color: black;
+        }
+
+        .show:link, .show:visited {
+          background-color: white;
+          margin-left: 480px;
+          border-radius: 10px;
+          color: black;
+          border: 2px solid #1e90ff;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          position:absolute;
+          font-size: 20px;
+          transition: .5s ease;
+          top: 23%;
+          left: 48%;
+        }
+        .show:hover, .show:active {
+          background-color: #1e90ff;
+        }
+
+        p {
+          text-align: center;
+          font-size: 30px;
+          margin-top: 20px;
+        }
+
+        .back:link, .back:visited {
+          background-color: white;
+          margin-left: 480px;
+          border-radius: 10px;
+          color: black;
+          border: 2px solid #d40000;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          position:absolute;
+          font-size: 20px;
+          transition: .5s ease;
+          top: 40%;
+          left: 15%;
+        }
+        .back:hover, .back:active {
+          background-color: #d40000;
+        }
+
+        .edit:link, .edit:visited {
+          background-color: white;
+          margin-left: 480px;
+          border-radius: 10px;
+          color: black;
+          border: 2px solid #1e90ff;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          position:absolute;
+          font-size: 20px;
+          transition: .5s ease;
+          top: 50%;
+          left: 5%;
+        }
+        .edit:hover, .edit:active {
+          background-color: #1e90ff;
+        }
+
+        .notes {
+          margin-left: 35%;
+        }
+
+        .form {
+          margin-left: 720px;
+        }
+
+        .create {
+          margin-left: 720px;
+        }
     </style>
   </head>
-
   <body>
     <%= yield %>
   </body>
