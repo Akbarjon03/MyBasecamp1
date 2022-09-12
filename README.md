@@ -1,24 +1,15 @@
-# README
+Hi!
+This is "My Basecamp" project.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+How to run this project?
+You need to download this project and it can be run via "rails server" command. 
 
-Things you may want to cover:
+I recommend studying this tutorials:    https://www.youtube.com/watch?v=fmyvWz5TUWg&t=1131s
 
-* Ruby version
+The official "Ruby on Rails" page:      https://guides.rubyonrails.org/
 
-* System dependencies
+The official "Ruby" page:               https://www.rubyguides.com/
 
-* Configuration
+The official "Ruby Gems" page:          https://rubygems.org/
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This in my demo website :               https://mybscmp11.herokuapp.com/
