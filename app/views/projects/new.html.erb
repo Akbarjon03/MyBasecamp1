@@ -1,7 +1,8 @@
-<p class="fw-bolder fs-1 text-center">New project</p>
+<header>New project</header>
+  <div class="prjt">
+    <%= render "form", project: @project , class:"form"%>
+  </div>
 
-<%= render "form", project: @project , class:"form"%>
-
-<div>
-  <%= link_to "Back to projects", projects_path, class:"back" %>
-</div>
+  <div class="back">
+    <%= link_to "Back to projects", projects_path %>
+  </div>

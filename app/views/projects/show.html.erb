@@ -1,9 +1,10 @@
-<br/>
-<%= render @project %>
-
-<div>
-  <%= link_to "Edit this project", edit_project_path(@project), class:"edit1" %>
-  <%= link_to "Back to projects", projects_path, class:"back" %>
-
-  <%= button_to "Destroy this project", @project, method: :delete, class:"delete" %>
+<header>Note created</header>
+<div class="cnt">
+  <%= render @project %>
 </div>
+<div class="this">
+  <%= link_to "Edit this project", edit_project_path(@project) %> ||
+  <%= link_to "Back to projects", projects_path %>
+</div>
+
+<%= button_to "Destroy this project", @project, method: :delete, class:"delete" %>
