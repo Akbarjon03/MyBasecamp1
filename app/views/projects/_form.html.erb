@@ -11,20 +11,15 @@
     </div>
   <% end %>
 
-  <div class="form">
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
+  <div class="edit">
+    <%= form.label :name, class:"name" %>
+    <%= form.text_field :name, class:"form" %>
 
-  <div class="form">
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
-  </div>
-
-  <%= form.number_field :user_id, id: :project_user_id, value: current_user.id, type: :hidden %>
-
-
-  <div class="create">
-    <%= form.submit%>
+    <%= form.label :description, class:"name" %>
+    <%= form.text_area :description , class:"form"%>
+  
+    <%= form.number_field :user_id, id: :project_user_id, value: current_user.id, type: :hidden %>
+  <br/>
+    <%= form.submit "Create Project", class:"create"%>
   </div>
 <% end %>
