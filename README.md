@@ -14,8 +14,13 @@ This is our project My Basecamp1.
 
 ## Authors
 
+In GitHub:
 - [@Akbarjon03](https://www.github.com/Akbarjon03)
 - [@khusanovaas](https://github.com/khusanovaas)
+
+For Gitea:
+- [@odilov_a](https://git.us.qwasar.io/odilov_a)
+- [@husanova_s](https://git.us.qwasar.io/husanova_s)
 
 
 ## Deployment
