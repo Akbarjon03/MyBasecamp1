@@ -1,44 +1,100 @@
-<div class="container">
-  <div class="myCard">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="myLeftCtn">
-          <div class="myForm text-center">
-            <h3>Log in</h3>
-            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-            <div class="form-group">
-              <%= f.label :email %><br />
-              <%= f.email_field :email, class:"myInput", autofocus: true,placeholder:"example@mail.com", autocomplete: "email" %>
-            </div>
-
-            <div class="form-group">
-              <%= f.label :password %>
-              <%= f.password_field :password, class:"myInput", autocomplete: "current-password" %>
-            </div>
-          
-            <% if devise_mapping.rememberable? %>
-            <div class="field">
-              <%= f.check_box :remember_me %>
-              <%= f.label :remember_me %>
-            </div>
-            <% end %>
-
-            <div class="actions">
-              <%= f.submit "Log in" , class:"submit"%>
-            </div>
-            <br>
-            <%= render "devise/shared/links" %>
-            <% end %>
-          </div>
-        </div>
-      </div>
-        <div class="photo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="#9932cc" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
-              <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-            </svg>
-        </div>
-    </div>
-  </div>
+<div class="contact-us">
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "E-mail" %>
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
+    <%= f.submit "Log in" %>
+  <% end %>
+    <%= link_to "Sign Up", new_user_registration_path, style: "text-decoration: none;" %>
 </div>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.contact-us {
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border: 2px solid black;
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid black;
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: black;
+}
+
+input:focus {
+  border-bottom: 5px solid #ffa580;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black;
+}
+button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+::selection {
+  background: #ffc8ff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 5px solid #95a4ff;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+</style>

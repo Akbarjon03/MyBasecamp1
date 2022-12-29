@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
-  root 'pages#index'
-  get 'pages/about'
-  resources :projects
+  resources :ishbers
+  root "projects#index"
+  resources :tgers
+  
+  resources :tgs do
+    resources :tgers
+  end
+  resources :yuks
+  resources :projects do
+    resources :yuks
+    resources :tgs
+    resources :ishbers
+  end
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end

@@ -1,8 +1,14 @@
-<header>New project</header>
-  <div class="prjt">
-    <%= render "form", project: @project , class:"form"%>
+<br/>
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <h1>New project</h1>
   </div>
 
-  <div class="back">
-    <%= link_to "Back to projects", projects_path %>
+  <div class="card-body">
+    <%= render "form", project: @project %>
+    <br>
+    <div>
+      <%= link_to "Back to projects", projects_path , class:"allbuttons"%>
+    </div>
   </div>
+</div>
